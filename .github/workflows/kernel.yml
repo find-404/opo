@@ -13,7 +13,6 @@ jobs:
 
       - name: Build SuperRyzen Kernel
         run: |
-          wget https://raw.githubusercontent.com/find-404/opo/main/build-start.sh
           wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build-start.sh
           bash build-start.sh stable clang
           cd kernel
