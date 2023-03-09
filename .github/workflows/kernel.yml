@@ -9,7 +9,7 @@ jobs:
     runs-on: ubuntu-22.04
     steps:
       - name: Checkout code
-        uses: actions/checkout@v2
+        uses: actions/checkout@v3
 
       - name: Build SuperRyzen Kernel
         run: |
@@ -53,23 +53,23 @@ jobs:
         uses: actions/upload-artifact@v3.1.2
         with:
           name: a26x
-          path: ak3-a26x/*zip
+          path: kernel/ak3-a26x/*.zip
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: lavender
-          path: ak3-lavender/*zip
+          path: kernel/ak3-lavender/*.zip
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: tulip
-          path: ak3-tulip/*zip
+          path: kernel/ak3-tulip/*.zip
           
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
           name: whyred
-          path: ak3-whyred/*zip
+          path: kernel/ak3-whyred/*.zip
     
