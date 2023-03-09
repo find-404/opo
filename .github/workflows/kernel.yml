@@ -13,6 +13,7 @@ jobs:
 
       - name: Build SuperRyzen Kernel
         run: |
+          sudo update-alternatives --install /usr/bin/gcc gcc /usr/bin/gcc-9 9
           wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build-start.sh
           bash build-start.sh stable clang
           cd kernel
