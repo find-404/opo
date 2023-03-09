@@ -18,6 +18,9 @@ jobs:
           cd kernel
           rm build-dtb.sh
           rm build.sh
+          mv scripts/dtc/dtc-lexer.lex.c_shipped scripts/dtc/dtc-lexer.lex.c
+          mv scripts/dtc/dtc-parser.tab.c_shipped scripts/dtc/dtc-parser.tab.c
+          mv scripts/dtc/dtc-parser.tab.h_shipped scripts/dtc/dtc-parser.tab.h
           wget https://raw.githubusercontent.com/find-404/opo/main/build-dtb.sh
           bash build-dtb.sh a26x clang qpnp
           bash build-dtb.sh lavender clang qpnp
