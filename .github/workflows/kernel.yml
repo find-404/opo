@@ -17,6 +17,8 @@ jobs:
           wget https://raw.githubusercontent.com/find-404/opo/main/build-start.sh
           bash build-start.sh stable clang
           cd kernel
+          rm build-dtb.sh
+          rm build.sh
           wget https://raw.githubusercontent.com/find-404/opo/main/build-dtb.sh
           bash build-dtb.sh a26x clang qpnp
           bash build-dtb.sh lavender clang qpnp
