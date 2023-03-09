@@ -109,15 +109,3 @@ cp "$AK3_DIR"/*.zip kernel-done/
 # End count and calculate total build time
 BUILD_END=$(date +"%s")
 DIFF=$((BUILD_END - BUILD_START))
-
-# Push kernel to telegram
-push_document "$AK3_DIR/$ZIP_NAME" "
-<b>device :</b> <code>$DEVICE</code>
-<b>kernel version :</b> <code>$KERNEL_VERSION</code>
-<b>blob version :</b> <code>$CONFIGVERSION</code>
-<b>md5 checksum :</b> <code>$(md5sum "$AK3_DIR/$ZIP_NAME" | cut -d' ' -f1)</code>
-<b>build time :</b> <code>$(("$DIFF" / 60)) minute, $(("$DIFF" % 60)) second</code>"
-
-rm -rf out/arch/arm64/boot/
-rm -rf out/.version
-rm -rf "$AK3_DIR"/*.zip
