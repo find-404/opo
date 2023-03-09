@@ -14,14 +14,10 @@ jobs:
       - name: Build SuperRyzen Kernel
         run: |
           wget https://raw.githubusercontent.com/find-404/opo/main/build-start.sh
+          wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build-start.sh
           bash build-start.sh stable clang
           cd kernel
-          rm build-dtb.sh
-          rm build.sh
-          mv scripts/dtc/dtc-lexer.lex.c_shipped scripts/dtc/dtc-lexer.lex.c
-          mv scripts/dtc/dtc-parser.tab.c_shipped scripts/dtc/dtc-parser.tab.c
-          mv scripts/dtc/dtc-parser.tab.h_shipped scripts/dtc/dtc-parser.tab.h
-          wget https://raw.githubusercontent.com/find-404/opo/main/build-dtb.sh
+          wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build-dtb.sh
           bash build-dtb.sh a26x clang qpnp
           bash build-dtb.sh lavender clang qpnp
           bash build-dtb.sh tulip clang qpnp
@@ -32,7 +28,7 @@ jobs:
           bash build-dtb.sh tulip clang qti
           bash build-dtb.sh whyred clang qti
           git restore .
-          wget https://raw.githubusercontent.com/find-404/opo/main/build.sh
+          wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build.sh
           bash build.sh a26x newcam clang
           bash build.sh a26x oldcam clang
           bash build.sh a26x tencam clang
@@ -53,3 +49,5 @@ jobs:
           bash build.sh tulip oldcam oc clang
           bash build.sh whyred newcam oc clang
           bash build.sh whyred oldcam oc clang
+          wget https://raw.githubusercontent.com/TianWalkzzMiku/SRyzen-CAF/caf/build-final.sh
+          bash build-final.sh clang
