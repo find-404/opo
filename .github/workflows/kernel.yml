@@ -62,7 +62,80 @@ jobs:
       - name: Upload a Build Artifact
         uses: actions/upload-artifact@v3.1.2
         with:
-          name: kernel All
-          path: kernel/kernel-done/*          
+          name: SuperRyzen-CAF_a26x_v7_newcam
+          path: kernel/kernel-done/SuperRyzen-CAF_a26x_v7_newcam.zip
+          
+                          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_a26x_v7_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_a26x_v7_oldcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_a26x_v7_tencam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_a26x_v7_tencam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_lavender_v7_newcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_lavender_v7_newcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_lavender_v7_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_lavender_v7_oldcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_tulip_v7_newcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_tulip_v7_newcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_tulip_v7_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_tulip_v7_oldcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_tulip_v7-OC_newcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_tulip_v7-OC_newcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_tulip_v7-OC_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_tulip_v7-OC_oldcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_whyred_v7_newcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_whyred_v7_newcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_whyred_v7_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_whyred_v7_oldcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_whyred_v7-OC_newcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_whyred_v7-OC_newcam.zip
+          
+      - name: Upload a Build Artifact
+        uses: actions/upload-artifact@v3.1.2
+        with:
+          name: SuperRyzen-CAF_whyred_v7-OC_oldcam.zip
+          path: kernel/kernel-done/SuperRyzen-CAF_whyred_v7-OC_oldcam.zip
 
     
