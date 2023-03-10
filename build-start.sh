@@ -10,7 +10,7 @@ fi
 
 # Fetch changes from secondary repository
 git fetch https://github.com/Evolution-X-Devices/kernel_xiaomi_sdm660 tiramisu
-git merge FETCH_HEAD
+git merge --allow-unrelated-histories FETCH_HEAD
 
 # Clone toolchain
 if [[ "$*" =~ "clang" ]]; then
