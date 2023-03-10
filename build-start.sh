@@ -8,6 +8,10 @@ if [[ "$*" =~ "stable" ]]; then
     cd kernel || exit
 fi
 
+# Fetch changes from secondary repository
+git fetch https://github.com/Evolution-X-Devices/kernel_xiaomi_sdm660 tiramisu
+git merge FETCH_HEAD
+
 # Clone toolchain
 if [[ "$*" =~ "clang" ]]; then
     git clone --depth=1 https://gitlab.com/Panchajanya1999/azure-clang clang
