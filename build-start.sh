@@ -9,7 +9,9 @@ if [[ "$*" =~ "stable" ]]; then
 fi
 
 # Fetch changes from secondary repository
-git fetch https://github.com/Evolution-X-Devices/kernel_xiaomi_sdm660 tiramisu
+git config --global user.email "firdiansyaindrianto@gmail.com"
+git config --global user.name "find-404"
+git fetch https://github.com/find-404/kernel_xiaomi_sdm660 tiramisu
 git merge --allow-unrelated-histories FETCH_HEAD
 
 # Clone toolchain
