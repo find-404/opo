@@ -12,7 +12,7 @@ fi
 git config --global user.email "firdiansyaindrianto@gmail.com"
 git config --global user.name "find-404"
 git fetch https://github.com/find-404/kernel_xiaomi_sdm660 tiramisu
-git merge --allow-unrelated-histories FETCH_HEAD
+git merge --allow-unrelated-histories
 
 # Clone toolchain
 if [[ "$*" =~ "clang" ]]; then
