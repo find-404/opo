@@ -4,15 +4,9 @@
 
 # Clone kernel source
 if [[ "$*" =~ "stable" ]]; then
-    git clone --depth=1 https://github.com/TianWalkzzMiku/SRyzen-CAF.git -b caf kernel
+    git clone --depth=1 https://github.com/find-404/kernel_xiaomi_sdm660.git -b tiramisu kernel
     cd kernel || exit
 fi
-
-# Fetch changes from secondary repository
-git config --global user.email "firdiansyaindrianto@gmail.com"
-git config --global user.name "find-404"
-git fetch https://github.com/find-404/kernel_xiaomi_sdm660 tiramisu
-git merge --allow-unrelated-histories
 
 # Clone toolchain
 if [[ "$*" =~ "clang" ]]; then
